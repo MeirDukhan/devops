@@ -10,4 +10,15 @@
 
     - name: Clone repo MeirDukhan / devops
       git: clone=yes repo=https://github.com/MeirDukhan/spring-petclinic.git dest=/home/ec2-user/SP
+    
+    - name: Install docker and add 'docker' groupto "ec2-user"
+      yum: name=docker state=latest
+      become: yes
+      become_method: sudo
+
+    - name: Add 'docker' group to "ec2-user"
+      user: name=docker groups=ec2-user 
+
+    - name: STart the docker service
+      service: name=docker state=started
 
