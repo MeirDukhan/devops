@@ -22,5 +22,7 @@
       user: name=docker groups=ec2-user 
 
     - name: STart the docker service
+      become: yes
+      become_method: sudo
       service: name=docker state=started
 
