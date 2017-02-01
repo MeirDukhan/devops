@@ -6,10 +6,10 @@
       become_method: sudo
 
     - name: Clone repo MeirDukhan / devops
-      git: clone=yes repo=https://github.com/MeirDukhan/devops.git dest=/home/ec2-user/DevOps_Ex1
+      git: clone=yes repo=https://github.com/MeirDukhan/devops.git dest=/home/ec2-user/DevOps_Ex1 update=no
 
     - name: Clone repo MeirDukhan / devops
-      git: clone=yes repo=https://github.com/MeirDukhan/spring-petclinic.git dest=/home/ec2-user/SP
+      git: clone=yes repo=https://github.com/MeirDukhan/spring-petclinic.git dest=/home/ec2-user/SP update=no
     
     - name: Install docker and add 'docker' groupto "ec2-user"
       yum: name=docker state=latest
@@ -19,7 +19,7 @@
     - name: Add 'docker' group to "ec2-user"
       become: yes
       become_method: sudo
-      user: name=docker groups=ec2-user 
+      user: name=ec2-user groups=docker append=yes
 
     - name: STart the docker service
       become: yes
