@@ -17,6 +17,8 @@
       become_method: sudo
 
     - name: Add 'docker' group to "ec2-user"
+      become: yes
+      become_method: sudo
       user: name=docker groups=ec2-user 
 
     - name: STart the docker service
