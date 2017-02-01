@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - name: Install git
+      yum: name=git state=latest 
+      become: yes
+      become_method: sudo
+
+    - name: Clone repo MeirDukhan / devops
+      git: clone=yes repo=https://github.com/MeirDukhan/devops.git dest=/home/ec2-user/DevOps_Ex1
+
+    - name: Clone repo MeirDukhan / devops
+      git: clone=yes repo=https://github.com/MeirDukhan/spring-petclinic.git dest=/home/ec2-user/SP
+
