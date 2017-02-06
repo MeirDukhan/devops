@@ -26,3 +26,12 @@
       become_method: sudo
       service: name=docker state=started
 
+    - name: Untar Maven 
+      # become: yes
+      # become_method: sudo
+      unarchive:
+          src: http://apache.spd.co.il/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+          copy: no
+          creates: /home/ec2-user/DevOps_Ex2/apache-maven-3.3.9
+          dest: /home/ec2-user/DevOps_Ex2
+
