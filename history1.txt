@@ -1,0 +1,220 @@
+    1  ansible
+    2  pip install ansible
+    3  sudo pip install ansible
+    4  ansible
+    5  ansible -c local
+    6  ansible localhost -c local
+    7  ansible localhost -c local -v
+    8  ansible localhost -c local -m ping
+    9  ansible -m ping
+   10  ansible localhost -m ping
+   11  ansible localhost -a "/bin/echo hello"
+   12  yum list | grep java7
+   13  yum list | grep java8
+   14  yum list | grep java
+   15  sudo yum install java-1.8.0-openjdk-devel.x86_64
+   16  java -version
+   17  yum list installed | grep java
+   18  yum remove java-1.7.0-openjdk.x86_64
+   19  sudo yum remove java-1.7.0-openjdk.x86_64
+   20  java -version
+   21  javac
+   22  echo $JAVA_HOME
+   23  ls /usr/lib/jvm
+   24  ls /usr/lib/jvm/jre
+   25  ls /usr/lib/jvm/jre/bin
+   26    
+   27  git 
+   28  # https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   29  mkdir Ansible
+   30  cd Ansible 
+   31  wget https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   32  , 
+   33  clear 
+   34  ll 
+   35  cat install_git_clone_repos.yml 
+   36  , 
+   37  clear 
+   38  ll 
+   39  rm -f install_git_clone_repos.yml 
+   40  wget https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   41  ll 
+   42  less install_git_clone_repos.yml 
+   43  rm -f install_git_clone_repos.yml 
+   44  wget https://raw.githubusercontent.com/MeirDukhan/devops/master/install_git_clone_repos.yml 
+   45  ll 
+   46  less install_git_clone_repos.yml 
+   47  clear 
+   48  ansible-playbook install_git_clone_repos.yml 
+   49  set -o vi 
+   50  ll 
+   51  ll SP/
+   52  ll DevOps_Ex1/
+   53  cd DevOps_Ex1/
+   54  ll
+   55  clear 
+   56  ll -a 
+   57  git status 
+   58  vi install_git_clone_repos.yml 
+   59  ansible-playbook install_git_clone_repos.yml 
+   60  ll /tmp/apache-maven-3.3.9.bin.tar.gz 
+   61  vi install_git_clone_repos.yml 
+   62  clear 
+   63  ansible-playbook install_git_clone_repos.yml 
+   64  vi install_git_clone_repos.yml 
+   65  ansible-playbook install_git_clone_repos.yml 
+   66  vi install_git_clone_repos.yml 
+   67   lcear 
+   68  clear 
+   69  ansible-playbook install_git_clone_repos.yml 
+   70  vi install_git_clone_repos.yml 
+   71  ansible-playbook install_git_clone_repos.yml 
+   72  vi install_git_clone_repos.yml 
+   73  clear 
+   74  ansible-playbook install_git_clone_repos.yml 
+   75  clear 
+   76  vi install_git_clone_repos.yml 
+   77  ansible-playbook install_git_clone_repos.yml 
+   78  vi install_git_clone_repos.yml 
+   79  ansible-playbook install_git_clone_repos.yml 
+   80  alias ,=clear
+   81  ,
+   82  ll /usr/local/bin/
+   83  du -sh  /usr/local/bin/a
+   84  du -sh  /usr/local/bin/apache-maven-3.3.9/
+   85  ansible-playbook install_git_clone_repos.yml 
+   86  , 
+   87  vi install_git_clone_repos.yml 
+   88  ansible-playbook install_git_clone_repos.yml 
+   89  vi install_git_clone_repos.yml 
+   90  mkdir ../DevOps_Ex2
+   91  vi install_git_clone_repos.yml 
+   92  m 
+   93  , 
+   94  ansible-playbook install_git_clone_repos.yml 
+   95  , 
+   96  ansible-playbook install_git_clone_repos.yml 
+   97  ll ../DevOps_Ex2/
+   98  , 
+   99  ansible-playbook install_git_clone_repos.yml 
+  100  vi install_git_clone_repos.yml 
+  101  , 
+  102  vi install_git_clone_repos.yml 
+  103  ansible-playbook install_git_clone_repos.yml 
+  104  , 
+  105  ansible-playbook install_git_clone_repos.yml 
+  106  ll 
+  107  cd ../DevOps_Ex2/
+  108  ll 
+  109  vi install_git_clone_repos.yml 
+  110  , 
+  111  vi install_git_clone_repos.yml 
+  112  cd - 
+  113  vi install_git_clone_repos.yml 
+  114  , 
+  115  ansible-playbook install_git_clone_repos.yml 
+  116  vi install_git_clone_repos.yml 
+  117  ll ../DevOps_Ex2/
+  118  rm -fr  ../DevOps_Ex2/apache-maven-3.3.9/
+  119  , 
+  120  sudo rm -fr  ../DevOps_Ex2/apache-maven-3.3.9/
+  121  ll ../DevOps_Ex2/
+  122  ansible-playbook install_git_clone_repos.yml 
+  123  , 
+  124  ansible-playbook install_git_clone_repos.yml 
+  125  vi install_git_clone_repos.yml 
+  126  , 
+  127  ll ../DevOps_Ex2/
+  128  vi install_git_clone_repos.yml 
+  129  ansible-playbook install_git_clone_repos.yml 
+  130  , 
+  131  git status 
+  132  git commit 
+  133  git commit -m "Added Maven install" 
+  134  git commit -m "Added Maven install" install_git_clone_repos.yml 
+  135  , 
+  136  git commit install_git_clone_repos.yml -m "Added Maven install"  
+  137  git status
+  138  git push 
+  139  , 
+  140  git pull 
+  141  l l
+  142  ll 
+  143  cd ../
+  144  ls 
+  145  ll 
+  146  mkdir Docker
+  147  cd  Docker 
+  148  wget https://raw.githubusercontent.com/shimib/devops/master/docker_commands 
+  149  cat docker_commands 
+  150  , 
+  151  ll 
+  152  vi Dockerfile
+  153  cat docker_commands 
+  154  docker run Dockerfile 
+  155  docker run -it Dockerfile 
+  156  docker build -t Dockerfile 
+  157  vi Dockerfile
+  158  java --version 
+  159  java -version 
+  160  yum list | grep openjdk 
+  161  vi Dockerfile
+  162  , 
+  163  docker build -t Dockerfile . 
+  164  docker build -t centos_tomcat . 
+  165  ll 
+  166  cat docker_commands 
+  167  , 
+  168  cat docker_commands 
+  169  docker ps 
+  170  docker run -it centos_tomcat 
+  171  docker ps 
+  172  vi Dockerfile 
+  173  docker run -it centos_tomcat 
+  174  vi Dockerfile 
+  175  docker run -it centos_tomcat 
+  176  ifconfig 
+  177  telnet 172.31.10.203 8080 
+  178  telnet  172.17.0.2 8080 
+  179  ping 172.17.0.2 
+  180  ssh 172.17.0.2 
+  181  vi Dockerfile 
+  182  docker exec "/bin/bash" 
+  183  docker -s 
+  184  docker ps 
+  185* docker exec 4564160236f7 
+  186  docker exec 4564160236f7 -it "/bin/bash"
+  187  docker exec 4564160236f7 /bin/bash
+  188  docker exec 4564160236f7 /bin/cat /var/jenkins_home/secrets/initialAdminPassword
+  189   
+  190  ll 
+  191  ll DevOps_Ex2/
+  192  cd DevOps_Ex1/
+  193  wget https://raw.githubusercontent.com/shimib/devops/master/Dockerfile 
+  194  ll 
+  195  ll ../Docker/
+  196  mv Dockerfile Dockerfile_Shimi 
+  197  ll 
+  198  cp -ip ../Docker/Dockerfile .
+  199  ll 
+  200  git status 
+  201  git add Dockerfile 
+  202  #git commit install_git_clone_repos.yml -m "Added Maven install"  
+  203  set -o vi 
+  204  git commit Dockerfile  -m "Dockerfile for tomcat6" 
+  205  git status
+  206  git push 
+  207  docker run -d -p 8081:8081 mattgruter/artifactory
+  208  ll 
+  209  cat Dockerfile_Shimi 
+  210  docker images 
+  211  docker run -it mattgruter/artifactory 
+  212  docker run -d -p 8181:8080 mattgruter/artifactory
+  213  ll 
+  214  docker ps 
+  215  docker rm -f 0c611c7026d9 
+  216  docker ps 
+  217  ll 
+  218  history | less 
+  219  history | grep jenkins
+  220  history > history1.txt
