@@ -1,0 +1,131 @@
+    1  ansible
+    2  pip install ansible
+    3  sudo pip install ansible
+    4  ansible
+    5  ansible -c local
+    6  ansible localhost -c local
+    7  ansible localhost -c local -v
+    8  ansible localhost -c local -m ping
+    9  ansible -m ping
+   10  ansible localhost -m ping
+   11  ansible localhost -a "/bin/echo hello"
+   12  yum list | grep java7
+   13  yum list | grep java8
+   14  yum list | grep java
+   15  sudo yum install java-1.8.0-openjdk-devel.x86_64
+   16  java -version
+   17  yum list installed | grep java
+   18  yum remove java-1.7.0-openjdk.x86_64
+   19  sudo yum remove java-1.7.0-openjdk.x86_64
+   20  java -version
+   21  javac
+   22  echo $JAVA_HOME
+   23  ls /usr/lib/jvm
+   24  ls /usr/lib/jvm/jre
+   25  ls /usr/lib/jvm/jre/bin
+   26    
+   27  git 
+   28  # https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   29  mkdir Ansible
+   30  cd Ansible 
+   31  wget https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   32  , 
+   33  clear 
+   34  ll 
+   35  cat install_git_clone_repos.yml 
+   36  , 
+   37  clear 
+   38  ll 
+   39  rm -f install_git_clone_repos.yml 
+   40  wget https://github.com/MeirDukhan/devops/blob/master/install_git_clone_repos.yml 
+   41  ll 
+   42  less install_git_clone_repos.yml 
+   43  rm -f install_git_clone_repos.yml 
+   44  wget https://raw.githubusercontent.com/MeirDukhan/devops/master/install_git_clone_repos.yml 
+   45  ll 
+   46  less install_git_clone_repos.yml 
+   47  clear 
+   48  ansible-playbook install_git_clone_repos.yml 
+   49  telnet 172.17.0.2 8080 
+   50  yun install telnet 
+   51  yum install telnet 
+   52  sudo yum install telnet 
+   53  , 
+   54  kse
+   55  set -o vi 
+   56  telnet 172.17.0.2 8080 
+   57  sudo yum install telnet 
+   58  alias ,='clear' 
+   59  , 
+   60  cd Docker/
+   61  ll
+   62  cat Dockerfile 
+   63  vi  Dockerfile 
+   64  docker build -t tomcat_ex2 .
+   65  docker images 
+   66  #docker run -it centos 
+   67  cat Dockerfile 
+   68  docker images 
+   69  docker build -t tomcat_ex2 .
+   70  vi Dockerfile 
+   71  docker build -t tomcat_ex2 .
+   72  vi Dockerfile 
+   73  docker build -t tomcat_ex2 .
+   74  vi Dockerfile 
+   75  docker build -t tomcat_ex2 .
+   76  docker images 
+   77  docker run -it tomcat_ex2 
+   78  vi Dockerfile 
+   79  docker build -t tomcat_ex2 .
+   80  docker run -it tomcat_ex2 
+   81  vi Dockerfile 
+   82  docker build -t tomcat_ex2 .
+   83  docker run -it tomcat_ex2 
+   84  vi Dockerfile 
+   85  docker build -t tomcat_ex2 .
+   86  docker run -it tomcat_ex2 
+   87  netstat -anp | grep 8080 
+   88  netstat -an   | grep 8080 
+   89  docker run -it tomcat_ex2 
+   90  ifconfig 
+   91  ping 172.17.0.2
+   92  vi Dockerfile 
+   93  docker build -t tomcat_ex2 .
+   94  docker run -it tomcat_ex2 
+   95  vi Dockerfile 
+   96  docker build -t tomcat_ex2 .
+   97  docker run -it tomcat_ex2 
+   98  vi Dockerfile 
+   99  docker build -t tomcat_ex2 .
+  100  docker run -it tomcat_ex2 
+  101  vi Dockerfile 
+  102  docker run -it tomcat_ex2 
+  103  docker build -t tomcat_ex2 .
+  104  docker run -it tomcat_ex2 
+  105  vi Dockerfile 
+  106  docker run -it tomcat_ex2 
+  107  docker build -t tomcat_ex2 .
+  108  docker run -it tomcat_ex2 
+  109  vi Dockerfile 
+  110  docker build -t tomcat_ex2 .
+  111  docker run -it tomcat_ex2 
+  112  vi Dockerfile 
+  113  docker build -t tomcat_ex2 .
+  114  docker run -it tomcat_ex2 
+  115  vi Dockerfile 
+  116  docker build -t tomcat_ex2 .
+  117  docker run -it tomcat_ex2 
+  118  ll 
+  119  docker -list 
+  120  docker --list 
+  121  docker --help
+  122  docker images 
+  123  cat Dockerfile 
+  124  docker run -p 8080:8080 -p 5000:50000 jenkins 
+  125  docker run -d -p 8080:8080 -p 50000:50000 jenkins 
+  126  docker ps 
+  127  ifconfig 
+  128  lsof -i:22
+  129  sudo lsof -i:22
+  130  history | less 
+  131  history > history2.txt
