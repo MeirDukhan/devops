@@ -35,3 +35,23 @@
           creates: /home/ec2-user/DevOps_Ex2/apache-maven-3.3.9
           dest: /home/ec2-user/DevOps_Ex2
 
+    - name: Add environment variable in ~/.bashrc 
+      lineinfile:
+          destfile: /home/ec2-user/.bashrc
+          state: present
+          line: export M2_HOME=/home/ec2-user/DevOps_Ex2/apache-maven-3.3.9
+
+
+    - name: Add environment variable in ~/.bashrc 
+      lineinfile:
+          destfile: /home/ec2-user/.bashrc
+          line: export M2=$M2_HOME/bin
+
+    - name: Add environment variable in ~/.bashrc
+      lineinfile:
+          destfile: /home/ec2-user/.bashrc
+          line: export PATH=$M2:$PATH
+
+
+
+
